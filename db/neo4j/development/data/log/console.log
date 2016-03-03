@@ -1,0 +1,7 @@
+2016-03-02 19:08:17.782-0700 INFO  No SSL certificate found, generating a self-signed certificate..
+2016-03-02 19:08:30.808-0700 INFO  Successfully started database
+2016-03-02 19:08:30.946-0700 INFO  Starting HTTP on port 7474 (4 threads available)
+2016-03-02 19:08:31.765-0700 INFO  Enabling HTTPS on port 7473
+2016-03-02 19:08:32.092-0700 INFO  Mounting static content at /webadmin
+2016-03-02 19:08:32.267-0700 INFO  Mounting static content at /browser
+2016-03-02 19:08:35.168-0700 INFO  Remote interface ready and available at http://localhost:7474/
