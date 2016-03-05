@@ -1,14 +1,19 @@
 class Character
   include Neo4j::ActiveNode
-  property :character_id, type: Integer
-  property :name, type: String
-  property :aliases, type: String
-  property :deck, type: String
-  property :publisher, type: String
-  property :img, type: String
+  property :character_id
+  property :name
+  property :aliases
+  property :deck
+  property :publisher
+  property :img
+  property :created_at
+  property :updated_at
 
-  has_many :both, :friends, type: :friends, model_class: :Character
-  has_many :both, :enemies, type: :enemies, model_class: :Character
+  validates :character_id, :presence => true, :uniqueness => true
+  validates :name,         :presence => true, :uniqueness => true
+
+  has_many :both, :friends, type: :friends, model_class: :Character, unique: true
+  has_many :both, :enemies, type: :enemies, model_class: :Character, unique: true
 
   # THE CODE!!!
   # MATCH p=(d:Character {name:"Deadpool"})-[*1..6]-(m:Character {name:"Magneto"}) RETURN p

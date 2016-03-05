@@ -465,3 +465,54 @@ RETURN r;
 2016-03-05 17:21:33.196+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2016-03-05 17:21:33.196+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
 2016-03-05 17:22:13.692+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2), Parameter(  AUTOINT3)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT4), Parameter(  AUTOINT5), Parameter(  AUTOINT6), Parameter(  AUTOINT7)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
+2016-03-05 17:45:49.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 147644ms.
+2016-03-05 18:00:21.472+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [43]:  Starting check pointing...
+2016-03-05 18:00:21.474+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [43]:  Starting store flush...
+2016-03-05 18:00:21.501+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 43 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 18:00:21.503+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 43 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 18:00:21.516+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [43]:  Store flush completed
+2016-03-05 18:00:21.516+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [43]:  Starting appending check point entry into the tx log...
+2016-03-05 18:00:21.517+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [43]:  Appending check point entry into the tx log completed
+2016-03-05 18:00:21.517+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [43]:  Check pointing completed
+2016-03-05 18:00:21.517+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 18:00:21.517+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 18:00:24.616+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Character(uuid) with 7 unique values in sample of avg size 7 taken from index containing 7 entries
+2016-03-05 18:00:37.534+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH character9 WHERE (ID(character9) = {ID_character9}) MATCH character9-[rel1:`friends`]-(result_friends:`Character`) RETURN result_friends
+2016-03-05 18:00:37.549+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(character9)),List(),None,true)))),List(),Some(Where(Equals(FunctionInvocation(FunctionName(ID),false,Vector(Identifier(character9))),Parameter(ID_character9))))), Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(character9)),List(),None,true),RelationshipPattern(Some(Identifier(rel1)),false,List(RelTypeName(friends)),None,None,BOTH),NodePattern(Some(Identifier(result_friends)),List(),None,false))))),List(),Some(Where(HasLabels(Identifier(result_friends),List(LabelName(Character)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(result_friends),Identifier(result_friends)))),None,None,None))))
+2016-03-05 18:01:36.960+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH ()-[r:friends]->() RETURN r LIMIT 25
+2016-03-05 18:01:36.964+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(  UNNAMED7)),List(),None,false),RelationshipPattern(Some(Identifier(r)),false,List(RelTypeName(friends)),None,None,OUTGOING),NodePattern(Some(Identifier(  UNNAMED23)),List(),None,false))))),List(),None), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,Some(Limit(SignedDecimalIntegerLiteral(25)))))))
+2016-03-05 18:05:21.607+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Starting check pointing...
+2016-03-05 18:05:21.610+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Starting store flush...
+2016-03-05 18:05:21.618+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 44 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 18:05:21.619+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 44 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 18:05:21.624+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Store flush completed
+2016-03-05 18:05:21.624+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Starting appending check point entry into the tx log...
+2016-03-05 18:05:21.627+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Appending check point entry into the tx log completed
+2016-03-05 18:05:21.627+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Check pointing completed
+2016-03-05 18:05:21.627+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 18:05:21.627+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 18:10:21.703+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Starting check pointing...
+2016-03-05 18:10:21.705+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Starting store flush...
+2016-03-05 18:10:21.709+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 45 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 18:10:21.712+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 45 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 18:10:21.724+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Store flush completed
+2016-03-05 18:10:21.724+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Starting appending check point entry into the tx log...
+2016-03-05 18:10:21.727+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Appending check point entry into the tx log completed
+2016-03-05 18:10:21.727+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Check pointing completed
+2016-03-05 18:10:21.727+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 18:10:21.727+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 20:11:27.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2254209ms.
+2016-03-05 20:11:34.663+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 515ms.
+2016-03-05 20:13:45.829+0000 INFO  [o.n.k.i.f.GraphDatabaseFacade] Shutdown started
+2016-03-05 20:13:45.838+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Database is now unavailable
+2016-03-05 20:13:45.885+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [45]:  Starting check pointing...
+2016-03-05 20:13:45.886+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [45]:  Starting store flush...
+2016-03-05 20:13:45.888+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [45]:  Store flush completed
+2016-03-05 20:13:45.888+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [45]:  Starting appending check point entry into the tx log...
+2016-03-05 20:13:45.889+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [45]:  Appending check point entry into the tx log completed
+2016-03-05 20:13:45.889+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [45]:  Check pointing completed
+2016-03-05 20:13:45.889+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 20:13:45.889+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 20:13:45.956+0000 INFO  [o.n.k.NeoStoreDataSource] NeoStores closed
+2016-03-05 20:13:45.957+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2016-03-05 20:13:45.957+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---

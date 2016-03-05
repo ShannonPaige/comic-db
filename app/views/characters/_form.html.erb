@@ -1,8 +1,7 @@
-<%= form_for(@character) do |f| %>
+<%= form_for(@path) do |f| %>
   <% if @character.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@character.errors.count, "error") %> prohibited this character from being saved:</h2>
-
+      <h2><%= pluralize(@character.errors.count, "error") %> prohibited this search from happening:</h2>
       <ul>
       <% @character.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -12,29 +11,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :character_id %><br>
-    <%= f.number_field :character_id %>
+    <%= f.label :character_one %><br>
+    <%= f.number_field :character_one %>
   </div>
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :character_two %><br>
+    <%= f.text_field :character_two %>
   </div>
   <div class="field">
-    <%= f.label :aliases %><br>
-    <%= f.text_field :aliases %>
+    <%= f.label :type_of_path %><br>
+    <%= f.text_field :type_of_path %>
   </div>
-  <div class="field">
-    <%= f.label :deck %><br>
-    <%= f.text_field :deck %>
-  </div>
-  <div class="field">
-    <%= f.label :publisher %><br>
-    <%= f.text_field :publisher %>
-  </div>
-  <div class="field">
-    <%= f.label :img %><br>
-    <%= f.text_field :img %>
-  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -18,7 +18,7 @@ Bundler.require(*Rails.groups)
 
 module ComicDb
   class Application < Rails::Application
-    
+
     config.generators do |g|
       g.orm             :neo4j
     end
