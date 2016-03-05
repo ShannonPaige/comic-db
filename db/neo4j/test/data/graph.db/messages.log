@@ -1,0 +1,467 @@
+2016-03-05 16:01:21.618+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2016-03-05 16:01:22.074+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2016-03-05 16:01:22.105+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2016-03-05 16:01:22.106+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2016-03-05 16:01:22.117+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.keystore.location=data/keystore
+2016-03-05 16:01:22.117+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.db.tuning.properties=conf/neo4j.properties
+2016-03-05 16:01:22.118+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.database.location=data/graph.db
+2016-03-05 16:01:22.118+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.port=7475
+2016-03-05 16:01:22.118+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.config=conf/neo4j-http-logging.xml
+2016-03-05 16:01:22.118+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.querylog.filename=data/log/queries.log
+2016-03-05 16:01:22.119+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.enabled=false
+2016-03-05 16:01:22.119+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.enabled=false
+2016-03-05 16:01:22.119+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_certificate_file=conf/ssl/snakeoil.cert
+2016-03-05 16:01:22.119+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.port=7474
+2016-03-05 16:01:22.120+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webadmin.rrdb.location=data/rrd
+2016-03-05 16:01:22.120+0000 INFO  [o.n.k.i.DiagnosticsManager] remote_shell_enabled=true
+2016-03-05 16:01:22.120+0000 INFO  [o.n.k.i.DiagnosticsManager] edition=Community
+2016-03-05 16:01:22.120+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_key_file=conf/ssl/snakeoil.key
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=false
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2016-03-05 16:01:22.121+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2016-03-05 16:01:22.122+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2016-03-05 16:01:22.122+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2016-03-05 16:01:22.122+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2016-03-05 16:01:22.122+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2016-03-05 16:01:22.122+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2016-03-05 16:01:22.137+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 4.00 GB
+2016-03-05 16:01:22.139+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 16.63 MB
+2016-03-05 16:01:22.140+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 3.73 GB
+2016-03-05 16:01:22.141+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 3.00 GB
+2016-03-05 16:01:22.142+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 1.69 GB
+2016-03-05 16:01:22.142+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2016-03-05 16:01:22.143+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 27.87 MB
+2016-03-05 16:01:22.143+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 64.00 MB
+2016-03-05 16:01:22.143+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 1.00 GB
+2016-03-05 16:01:22.164+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2016-03-05 16:01:22.164+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen, G1 Perm Gen]
+2016-03-05 16:01:22.167+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=810.13 kB, max=48.00 MB, threshold=0.00 B
+2016-03-05 16:01:22.168+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=37.00 MB, used=29.00 MB, max=-1.00 B, threshold=?
+2016-03-05 16:01:22.169+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=3.00 MB, used=3.00 MB, max=-1.00 B, threshold=?
+2016-03-05 16:01:22.170+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=24.00 MB, used=2.63 MB, max=1.00 GB, threshold=0.00 B
+2016-03-05 16:01:22.171+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Perm Gen (Non-heap memory): committed=20.00 MB, used=11.86 MB, max=82.00 MB, threshold=0.00 B
+2016-03-05 16:01:22.171+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2016-03-05 16:01:22.173+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Mac OS X; version: 10.10.5; arch: x86_64; cpus: 4
+2016-03-05 16:01:22.174+0000 INFO  [o.n.k.i.DiagnosticsManager] Max number of file descriptors: 10.00 kB
+2016-03-05 16:01:22.175+0000 INFO  [o.n.k.i.DiagnosticsManager] Number of open file descriptors: 93.00 B
+2016-03-05 16:01:22.206+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 8102@Macbook-2.local
+2016-03-05 16:01:22.207+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2016-03-05 16:01:22.207+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: America/Denver
+2016-03-05 16:01:22.207+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2016-03-05 16:01:22.207+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2016-03-05 16:01:22.207+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2016-03-05 16:01:22.208+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 24.80-b11
+2016-03-05 16:01:22.210+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2016-03-05 16:01:22.215+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:hashCode=5, -Dneo4j.ext.udc.source=tarball, -Dneo4j.home=/Users/shannonpaige/comic-db/db/neo4j/test, -Dneo4j.instance=/Users/shannonpaige/comic-db/db/neo4j/test, -Dfile.encoding=UTF-8]
+2016-03-05 16:01:22.215+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2016-03-05 16:01:22.223+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/logback-access-1.1.2.jar
+2016-03-05 16:01:22.223+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-consistency-check-legacy-2.3.2.jar
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/javax.servlet-api-3.1.0.jar
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/logback-core-1.1.2.jar
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/classes
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jersey-server-1.19.jar
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2016-03-05 16:01:22.224+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2016-03-05 16:01:22.225+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-import-tool-2.3.2.jar
+2016-03-05 16:01:22.225+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-graph-algo-2.3.2.jar
+2016-03-05 16:01:22.225+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/neo4j-browser-2.3.2.jar
+2016-03-05 16:01:22.225+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/commons-digester-2.1.jar
+2016-03-05 16:01:22.225+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/commons-logging-1.1.1.jar
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-consistency-check-2.3.2.jar
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/rhino-1.7R4.jar
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/parboiled-scala_2.11-1.1.7.jar
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2016-03-05 16:01:22.226+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/bcprov-jdk15on-1.52.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jackson-mapper-asl-1.9.13.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-security-9.2.4.v20141103.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-graph-matching-2.3.2.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/scala-library-2.11.7.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-servlet-9.2.4.v20141103.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/resources.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2016-03-05 16:01:22.227+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-cypher-compiler-2.2_2.11-2.2.6.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/commons-lang3-3.3.2.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/asm-5.0.2.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-util-9.2.4.v20141103.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jfr.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-unsafe-2.3.2.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/commons-lang-2.6.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-logging-2.3.2.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2016-03-05 16:01:22.228+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-cypher-2.3.2.jar
+2016-03-05 16:01:22.229+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2016-03-05 16:01:22.229+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-codegen-2.3.2.jar
+2016-03-05 16:01:22.229+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/parboiled-core-1.1.7.jar
+2016-03-05 16:01:22.229+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2016-03-05 16:01:22.229+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jersey-multipart-1.19.jar
+2016-03-05 16:01:22.229+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-io-9.2.4.v20141103.jar
+2016-03-05 16:01:22.229+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/charsets.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/bcpkix-jdk15on-1.52.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-cypher-compiler-1.9_2.11-2.0.5.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-cypher-frontend-2.3-2.3.2.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-io-2.3.2.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jersey-servlet-1.19.jar
+2016-03-05 16:01:22.230+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/jline-2.12.jar
+2016-03-05 16:01:22.231+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/mimepull-1.9.3.jar
+2016-03-05 16:01:22.231+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2016-03-05 16:01:22.231+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-kernel-2.3.2.jar
+2016-03-05 16:01:22.231+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-shell-2.3.2.jar
+2016-03-05 16:01:22.231+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/neo4j-server-2.3.2-static-web.jar
+2016-03-05 16:01:22.231+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-lucene-index-2.3.2.jar
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-cypher-compiler-2.3-2.3.2.jar
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-server-9.2.4.v20141103.jar
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/commons-configuration-1.10.jar
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/opencsv-2.3.jar
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jackson-core-asl-1.9.13.jar
+2016-03-05 16:01:22.232+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jsse.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/netty-all-4.0.28.Final.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-csv-2.3.2.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/logback-classic-1.1.2.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/scala-reflect-2.11.7.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jce.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-webapp-9.2.4.v20141103.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/server-api-2.3.2.jar
+2016-03-05 16:01:22.233+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jsr311-api-1.1.2.r612.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-primitive-collections-2.3.2.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-udc-2.3.2.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-jmx-2.3.2.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/scala-parser-combinators_2.11-1.0.4.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/neo4j-server-2.3.2.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2016-03-05 16:01:22.234+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-http-9.2.4.v20141103.jar
+2016-03-05 16:01:22.235+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2016-03-05 16:01:22.235+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jersey-core-1.19.jar
+2016-03-05 16:01:22.235+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/lucene-core-3.6.2.jar
+2016-03-05 16:01:22.235+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/rrd4j-2.2.jar
+2016-03-05 16:01:22.235+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jetty-xml-9.2.4.v20141103.jar
+2016-03-05 16:01:22.235+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/commons-beanutils-1.8.3.jar
+2016-03-05 16:01:22.235+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/rt.jar
+2016-03-05 16:01:22.236+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/commons-io-2.4.jar
+2016-03-05 16:01:22.236+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/jackson-jaxrs-1.9.13.jar
+2016-03-05 16:01:22.236+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/system/lib/slf4j-api-1.7.6.jar
+2016-03-05 16:01:22.236+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/lib/neo4j-function-2.3.2.jar
+2016-03-05 16:01:22.236+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/shannonpaige/comic-db/db/neo4j/test/conf/
+2016-03-05 16:01:22.236+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2016-03-05 16:01:22.237+0000 INFO  [o.n.k.i.DiagnosticsManager] /Users/shannonpaige/Library/Java/Extensions
+2016-03-05 16:01:22.237+0000 INFO  [o.n.k.i.DiagnosticsManager] /Library/Java/Extensions
+2016-03-05 16:01:22.237+0000 INFO  [o.n.k.i.DiagnosticsManager] /Network/Library/Java/Extensions
+2016-03-05 16:01:22.237+0000 INFO  [o.n.k.i.DiagnosticsManager] /System/Library/Java/Extensions
+2016-03-05 16:01:22.237+0000 INFO  [o.n.k.i.DiagnosticsManager] /usr/lib/java
+2016-03-05 16:01:22.238+0000 INFO  [o.n.k.i.DiagnosticsManager] /Users/shannonpaige/comic-db/db/neo4j/test
+2016-03-05 16:01:22.238+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2016-03-05 16:01:22.242+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib
+2016-03-05 16:01:22.242+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.properties = conf/neo4j-server.properties
+2016-03-05 16:01:22.242+0000 INFO  [o.n.k.i.DiagnosticsManager] gopherProxySet = false
+2016-03-05 16:01:22.242+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = :
+2016-03-05 16:01:22.242+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = US
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = unknown
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = /Users/shannonpaige/comic-db/db/neo4j/test
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.ext.udc.source = tarball
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] log4j.configuration = file:conf/log4j.properties
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2016-03-05 16:01:22.243+0000 INFO  [o.n.k.i.DiagnosticsManager] http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = /Users/shannonpaige
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = America/Denver
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = UTF-8
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = shannonpaige
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityBootstrapper
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = en
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = /
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeBig
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2016-03-05 16:01:22.244+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.instance = /Users/shannonpaige/comic-db/db/neo4j/test
+2016-03-05 16:01:22.245+0000 INFO  [o.n.k.i.DiagnosticsManager] ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2016-03-05 16:01:22.245+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.home = /Users/shannonpaige/comic-db/db/neo4j/test
+2016-03-05 16:01:22.245+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = 
+2016-03-05 16:01:22.245+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2016-03-05 16:01:22.258+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface awdl0:
+2016-03-05 16:01:22.260+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:5c00:77ff:fe11:477b%8
+2016-03-05 16:01:22.261+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface en0:
+2016-03-05 16:01:22.261+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:9ae0:d9ff:fe7e:2245%4
+2016-03-05 16:01:22.261+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.0.31
+2016-03-05 16:01:22.261+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface lo0:
+2016-03-05 16:01:22.261+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:0:0:1%1
+2016-03-05 16:01:22.262+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2016-03-05 16:01:22.262+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2016-03-05 16:01:22.262+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2016-03-05 16:01:24.072+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2016-03-05 16:01:24.372+0000 INFO  [o.n.k.NeoStoreDataSource] Opened logical log [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.transaction.db.0] version=0, lastTxId=1 (clean)
+2016-03-05 16:01:24.393+0000 WARN  [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2016-03-05 16:01:24.608+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Rebuilding lucene scan store, this may take a while
+2016-03-05 16:01:24.614+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Lucene scan store rebuilt (roughly -1 nodes)
+2016-03-05 16:01:24.644+0000 INFO  [o.n.k.KernelHealth] Kernel health set to OK
+2016-03-05 16:01:26.310+0000 INFO  [o.n.k.AvailabilityGuard] Fulfilling of requirement makes database available: Database available
+2016-03-05 16:01:26.310+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Database is now ready
+2016-03-05 16:01:26.312+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2016-03-05 16:01:26.312+0000 INFO  [o.n.k.i.DiagnosticsManager] Graph Database: Community StoreId{creationTime=1457193683457, randomId=8546736679355699412, storeVersion=15250506225055238, upgradeTime=1457193683457, upgradeId=1}
+2016-03-05 16:01:26.312+0000 INFO  [o.n.k.i.DiagnosticsManager] Kernel version: 2.3.2,30a48a0
+2016-03-05 16:01:26.312+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] ArrayPropertyStore v0.A.6
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] NodeStore v0.A.6
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] PropertyIndexStore v0.A.6
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] ArrayPropertyStore v0.A.6
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] PropertyStore v0.A.6
+2016-03-05 16:01:26.314+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipTypeStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] LabelTokenStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] SchemaStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipGroupStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] NeoStore v0.A.6
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-03-05 16:01:26.315+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.316+0000 INFO  [o.n.k.i.DiagnosticsManager]   NodeStore v0.A.6: used=0 high=-1
+2016-03-05 16:01:26.316+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.316+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyIndexStore v0.A.6: used=0 high=-1
+2016-03-05 16:01:26.316+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.316+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.316+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyStore v0.A.6: used=0 high=-1
+2016-03-05 16:01:26.316+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipStore v0.A.6: used=0 high=-1
+2016-03-05 16:01:26.317+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.317+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore v0.A.6: used=0 high=-1
+2016-03-05 16:01:26.317+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.317+0000 INFO  [o.n.k.i.DiagnosticsManager]   LabelTokenStore v0.A.6: used=0 high=-1
+2016-03-05 16:01:26.317+0000 INFO  [o.n.k.i.DiagnosticsManager]   SchemaStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.317+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore v0.A.6: used=1 high=0
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager]   NeoStore v0.A.6: used=13 high=12
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager] Neostore records:
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager] TIME (Creation time): 1457193683457
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 8546736679355699412
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2016-03-05 16:01:26.318+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] STORE_VERSION (Store format version): 15250506225055238
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1457193683457
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 0
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 16
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2016-03-05 16:01:26.319+0000 INFO  [o.n.k.i.DiagnosticsManager] Transaction log:
+2016-03-05 16:01:26.320+0000 INFO  [o.n.k.i.DiagnosticsManager] No transactions found in any log
+2016-03-05 16:01:26.320+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2016-03-05 16:01:26.321+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2016-03-05 16:01:26.321+0000 INFO  [o.n.k.i.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 249779191808 / 68153823232 / 27
+Storage files: (filename : modification date - size)
+2016-03-05 16:01:26.324+0000 INFO  [o.n.k.i.DiagnosticsManager]   index:
+2016-03-05 16:01:26.325+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.325+0000 INFO  [o.n.k.i.DiagnosticsManager]   messages.log: 2016-03-05T09:01:26-0700 - 35.48 kB
+2016-03-05 16:01:26.325+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.326+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.counts.db.a: 2016-03-05T09:01:24-0700 - 96.00 B
+2016-03-05 16:01:26.326+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.326+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.327+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.327+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.327+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.327+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.337+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.337+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.337+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.338+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.338+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.339+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.339+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.339+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.340+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.340+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.340+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.341+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.341+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.341+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.341+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.342+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.342+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.342+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.343+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.343+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.343+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.343+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db: 2016-03-05T09:01:23-0700 - 8.00 kB
+2016-03-05 16:01:26.343+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db.id: 2016-03-05T09:01:23-0700 - 9.00 B
+2016-03-05 16:01:26.344+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.transaction.db.0: 2016-03-05T09:01:24-0700 - 16.00 B
+2016-03-05 16:01:26.344+0000 INFO  [o.n.k.i.DiagnosticsManager]   schema:
+2016-03-05 16:01:26.344+0000 INFO  [o.n.k.i.DiagnosticsManager]     label:
+2016-03-05 16:01:26.344+0000 INFO  [o.n.k.i.DiagnosticsManager]       lucene:
+2016-03-05 16:01:26.344+0000 INFO  [o.n.k.i.DiagnosticsManager]         write.lock: 2016-03-05T09:01:24-0700 - 0.00 B
+2016-03-05 16:01:26.345+0000 INFO  [o.n.k.i.DiagnosticsManager]       - Total: 2016-03-05T09:01:24-0700 - 0.00 B
+2016-03-05 16:01:26.345+0000 INFO  [o.n.k.i.DiagnosticsManager]     - Total: 2016-03-05T09:01:24-0700 - 0.00 B
+2016-03-05 16:01:26.345+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-03-05T09:01:23-0700 - 0.00 B
+2016-03-05 16:01:26.345+0000 INFO  [o.n.k.i.DiagnosticsManager]   store_lock: 2016-03-05T09:01:22-0700 - 0.00 B
+2016-03-05 16:01:26.346+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2016-03-05 16:01:32.580+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
+2016-03-05 16:01:35.992+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2016-03-05 16:10:20.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 263317ms.
+2016-03-05 16:10:24.728+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [3]:  Starting check pointing...
+2016-03-05 16:10:24.732+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [3]:  Starting store flush...
+2016-03-05 16:10:24.793+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 3 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:10:24.797+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 3 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:10:24.815+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [3]:  Store flush completed
+2016-03-05 16:10:24.815+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [3]:  Starting appending check point entry into the tx log...
+2016-03-05 16:10:24.820+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [3]:  Appending check point entry into the tx log completed
+2016-03-05 16:10:24.820+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [3]:  Check pointing completed
+2016-03-05 16:10:24.820+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 16:10:24.820+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 16:15:24.913+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [4]:  Starting check pointing...
+2016-03-05 16:15:24.915+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [4]:  Starting store flush...
+2016-03-05 16:15:24.916+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 4 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 16:15:24.918+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 4 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 16:15:24.922+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [4]:  Store flush completed
+2016-03-05 16:15:24.922+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [4]:  Starting appending check point entry into the tx log...
+2016-03-05 16:15:24.927+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [4]:  Appending check point entry into the tx log completed
+2016-03-05 16:15:24.928+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [4]:  Check pointing completed
+2016-03-05 16:15:24.928+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 16:15:24.928+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 16:18:20.263+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n) RETURN n LIMIT 100
+2016-03-05 16:18:20.267+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),None), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(n),Identifier(n)))),None,None,Some(Limit(SignedDecimalIntegerLiteral(100)))))))
+2016-03-05 16:19:25.099+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (a)-[r]->(b)
+WHERE labels(a) <> [] AND labels(b) <> []
+RETURN DISTINCT head(labels(a)) AS This, type(r) as To, head(labels(b)) AS That
+LIMIT 10
+2016-03-05 16:19:25.105+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,false),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,OUTGOING),NodePattern(Some(Identifier(b)),List(),None,false))))),List(),Some(Where(And(Not(Equals(FunctionInvocation(FunctionName(labels),false,Vector(Identifier(a))),Collection(List()))),Not(Equals(FunctionInvocation(FunctionName(labels),false,Vector(Identifier(b))),Collection(List()))))))), Return(true,ReturnItems(false,List(AliasedReturnItem(FunctionInvocation(FunctionName(head),false,Vector(FunctionInvocation(FunctionName(labels),false,Vector(Identifier(a))))),Identifier(This)), AliasedReturnItem(FunctionInvocation(FunctionName(type),false,Vector(Identifier(r))),Identifier(To)), AliasedReturnItem(FunctionInvocation(FunctionName(head),false,Vector(FunctionInvocation(FunctionName(labels),false,Vector(Identifier(b))))),Identifier(That)))),None,None,Some(Limit(SignedDecimalIntegerLiteral(10)))))))
+2016-03-05 16:20:25.009+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Starting check pointing...
+2016-03-05 16:20:25.013+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Starting store flush...
+2016-03-05 16:20:25.014+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 7 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:20:25.018+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 7 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:20:25.023+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Store flush completed
+2016-03-05 16:20:25.023+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Starting appending check point entry into the tx log...
+2016-03-05 16:20:25.027+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Appending check point entry into the tx log completed
+2016-03-05 16:20:25.027+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Check pointing completed
+2016-03-05 16:20:25.027+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 16:20:25.028+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 16:29:15.177+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [9]:  Starting check pointing...
+2016-03-05 16:29:15.180+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [9]:  Starting store flush...
+2016-03-05 16:29:15.202+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 9 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 16:29:15.204+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 9 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 16:29:15.221+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [9]:  Store flush completed
+2016-03-05 16:29:15.221+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [9]:  Starting appending check point entry into the tx log...
+2016-03-05 16:29:15.222+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [9]:  Appending check point entry into the tx log completed
+2016-03-05 16:29:15.222+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [9]:  Check pointing completed
+2016-03-05 16:29:15.222+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 16:29:15.222+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 16:34:15.299+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Starting check pointing...
+2016-03-05 16:34:15.302+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Starting store flush...
+2016-03-05 16:34:15.314+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 18 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:34:15.315+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 18 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:34:15.320+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Store flush completed
+2016-03-05 16:34:15.320+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Starting appending check point entry into the tx log...
+2016-03-05 16:34:15.326+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Appending check point entry into the tx log completed
+2016-03-05 16:34:15.326+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Check pointing completed
+2016-03-05 16:34:15.326+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 16:34:15.326+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 16:44:06.051+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 356857ms.
+2016-03-05 16:54:11.233+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Character(uuid) [provider: {key=lucene, version=1.0}]]
+2016-03-05 16:54:11.317+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
+2016-03-05 16:54:11.357+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Character(uuid) [provider: {key=lucene, version=1.0}]]
+2016-03-05 16:54:11.429+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
+2016-03-05 16:54:11.625+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Starting check pointing...
+2016-03-05 16:54:11.625+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Starting store flush...
+2016-03-05 16:54:11.627+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 22 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 16:54:11.631+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 22 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 16:54:11.648+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Store flush completed
+2016-03-05 16:54:11.648+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Starting appending check point entry into the tx log...
+2016-03-05 16:54:11.651+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Appending check point entry into the tx log completed
+2016-03-05 16:54:11.651+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Check pointing completed
+2016-03-05 16:54:11.651+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 16:54:11.652+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 16:55:44.617+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Character(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-03-05 16:55:54.613+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Character(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-03-05 16:56:04.612+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Character(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-03-05 16:56:14.399+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n:`Character`) RETURN n
+2016-03-05 16:56:14.400+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(n),List(LabelName(Character)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(n),Identifier(n)))),None,None,None))))
+2016-03-05 16:56:14.612+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Character(uuid) with 4 unique values in sample of avg size 4 taken from index containing 4 entries
+2016-03-05 16:59:11.750+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Starting check pointing...
+2016-03-05 16:59:11.752+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Starting store flush...
+2016-03-05 16:59:11.773+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 30 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:59:11.775+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 30 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 16:59:11.785+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Store flush completed
+2016-03-05 16:59:11.786+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Starting appending check point entry into the tx log...
+2016-03-05 16:59:11.787+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Appending check point entry into the tx log completed
+2016-03-05 16:59:11.787+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Check pointing completed
+2016-03-05 16:59:11.787+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 16:59:11.787+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 17:04:11.878+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting check pointing...
+2016-03-05 17:04:11.881+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting store flush...
+2016-03-05 17:04:11.885+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 35 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 17:04:11.887+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 35 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 17:04:11.893+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Store flush completed
+2016-03-05 17:04:11.893+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting appending check point entry into the tx log...
+2016-03-05 17:04:11.896+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Appending check point entry into the tx log completed
+2016-03-05 17:04:11.896+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Check pointing completed
+2016-03-05 17:04:11.896+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 17:04:11.896+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 17:08:24.610+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Character(uuid) with 5 unique values in sample of avg size 5 taken from index containing 5 entries
+2016-03-05 17:09:11.990+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Starting check pointing...
+2016-03-05 17:09:11.993+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Starting store flush...
+2016-03-05 17:09:12.021+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 36 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 17:09:12.024+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 36 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 17:09:12.029+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Store flush completed
+2016-03-05 17:09:12.030+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Starting appending check point entry into the tx log...
+2016-03-05 17:09:12.032+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Appending check point entry into the tx log completed
+2016-03-05 17:09:12.032+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Check pointing completed
+2016-03-05 17:09:12.033+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 17:09:12.033+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 17:15:49.047+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 241181ms.
+2016-03-05 17:16:33.035+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Starting check pointing...
+2016-03-05 17:16:33.037+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Starting store flush...
+2016-03-05 17:16:33.039+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 37 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 17:16:33.042+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 37 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b].
+2016-03-05 17:16:33.054+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Store flush completed
+2016-03-05 17:16:33.054+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Starting appending check point entry into the tx log...
+2016-03-05 17:16:33.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Appending check point entry into the tx log completed
+2016-03-05 17:16:33.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Check pointing completed
+2016-03-05 17:16:33.057+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 17:16:33.057+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 17:17:24.614+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Character(uuid) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2016-03-05 17:18:46.184+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[9,11,12]
+AND id(b) IN[9,11,12]
+RETURN r;
+2016-03-05 17:18:46.187+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
+2016-03-05 17:21:33.140+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [42]:  Starting check pointing...
+2016-03-05 17:21:33.143+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [42]:  Starting store flush...
+2016-03-05 17:21:33.182+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 42 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 17:21:33.185+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 42 to [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.b], from [/Users/shannonpaige/comic-db/db/neo4j/test/data/graph.db/neostore.counts.db.a].
+2016-03-05 17:21:33.193+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [42]:  Store flush completed
+2016-03-05 17:21:33.193+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [42]:  Starting appending check point entry into the tx log...
+2016-03-05 17:21:33.196+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [42]:  Appending check point entry into the tx log completed
+2016-03-05 17:21:33.196+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [42]:  Check pointing completed
+2016-03-05 17:21:33.196+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-05 17:21:33.196+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-05 17:22:13.692+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2), Parameter(  AUTOINT3)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT4), Parameter(  AUTOINT5), Parameter(  AUTOINT6), Parameter(  AUTOINT7)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))

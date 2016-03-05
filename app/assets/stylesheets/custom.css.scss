@@ -1,0 +1,13 @@
+.welcome {
+  background-image: image-url("The_Marvel_Universe.png");
+  min-height: 800px;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.welcome h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  color: #d9534f;
+}
