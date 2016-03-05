@@ -17,7 +17,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
-  gem 'database_cleaner'
+  gem 'database_cleaner', github: 'DatabaseCleaner/database_cleaner'
   gem 'selenium-webdriver'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
