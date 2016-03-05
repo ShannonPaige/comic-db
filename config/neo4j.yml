@@ -1,9 +1,0 @@
-development:
-  type: server_db
-  url: http://localhost:7474
-test:
-  type: server_db
-  url: http://localhost:7575
-production:
-  type: server_db
-  url: ENV["GRAPHENEDB_URL"]
