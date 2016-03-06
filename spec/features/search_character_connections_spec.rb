@@ -18,12 +18,15 @@ describe "the search process" do
   it "user can run a search on two characters" do
     char1 = Character.create(name: "Betty", character_id: 654334)
     char2 = Character.create(name: "Veronica", character_id: 2345654)
-    visit 'new_connection_path'
-    select 'Betty', from: :first_character
-    select 'Veronica', from: :second_character
+    char1.friends << char2
 
-    expect(page).to have_current_path(new_connection_path)
-    expect(page).to have_content 'The distance is 4'
+    visit new_connection_path
+    select 'Betty', from: :first_character_character_id
+    select 'Veronica', from: :second_character_character_id
+    click_button 'Find distance between them'
+
+    expect(page).to have_current_path(connections_path)
+    expect(page).to have_content 'There are 1 degree(s) of seperation.'
   end
 
 end

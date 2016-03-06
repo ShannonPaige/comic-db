@@ -15,6 +15,7 @@ gem 'figaro'
 group :development, :test do
   gem 'byebug'
   gem 'pry'
+  gem 'launchy'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner', github: 'DatabaseCleaner/database_cleaner'
