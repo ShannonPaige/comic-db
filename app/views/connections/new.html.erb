@@ -24,11 +24,16 @@
       </div>
     </div>
     <div class="col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          This is the big box where the connections will go
+      <% if @connection %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Degrees of seperation:</h3>
+          </div>
+          <div class="panel-body">
+            <%= @connection %>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>

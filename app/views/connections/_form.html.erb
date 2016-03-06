@@ -1,9 +1,9 @@
-<%= form_tag("/search", method: "get") do %>
+<%= form_tag(connections_path, method: "post") do %>
   <%= label_tag(:first_character, "Choose first character:") %><br />
-  <%= collection_select(:first_character, :character, Character.all, :character_id, :name) %>
+  <%= collection_select(:first_character, :character_id, Character.all, :character_id, :name) %>
   <br /><br />
   <%= label_tag(:second_character, "Choose second character:") %><br />
-  <%= collection_select(:second_character, :character, Character.all, :character_id, :name) %>
+  <%= collection_select(:second_character, :character_id, Character.all, :character_id, :name) %>
   <br /><br />
   <%= submit_tag("Find distance between them") %>
 <% end %>
