@@ -9,7 +9,13 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render partial: 'shared/nav' %>
+
+<div class="superheroes">
+  <div class="container">
+    <%= yield %>
+  </div>
+</div>
 
 </body>
 </html>
