@@ -15,14 +15,6 @@ class Character
   has_many :both, :friends, type: :friends, model_class: :Character, unique: true
   has_many :both, :enemies, type: :enemies, model_class: :Character, unique: true
 
-  # THE CODE!!!
-  # MATCH p=(d:Character {name: character1})-[*1..6]-(m:Character {name: character2}) RETURN p
-#
-# Neo4j::Session.query.match('(q: Character {name: {name}})').params(name: 'Archie').pluck(:q)
-# query.match('n-[:friends]->o').where(o: {age: 42}, n: {age: 1})
-
-
-
   def self.find_connection(char1, char2)
     first_character_id  = char1[:character_id].to_i
     second_character_id = char2[:character_id].to_i

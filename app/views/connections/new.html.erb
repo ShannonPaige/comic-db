@@ -24,16 +24,14 @@
       </div>
     </div>
     <div class="col-md-8">
-      <% if @connection %>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Degrees of seperation:</h3>
-          </div>
-          <div class="panel-body">
-            There are <%= @connection.first.to_a.first[:length] %> degree(s) of seperation.
-          </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Degrees of seperation:</h3>
         </div>
-      <% end %>
+        <div class="panel-body">
+          Graph goes here
+        </div>
+      </div>
     </div>
   </div>
 </div>

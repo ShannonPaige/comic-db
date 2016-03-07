@@ -1,4 +1,4 @@
-<%= form_tag(connections_path, method: "post") do %>
+<%= form_tag(api_v1_connections_path, method: "get") do %>
   <%= label_tag(:first_character, "Choose first character:") %><br />
   <%= collection_select(:first_character, :character_id, Character.all, :character_id, :name) %>
   <br /><br />

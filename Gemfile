@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'neo4j', '~> 6.1.0'
 gem 'figaro'
+gem 'responders'
+gem "active_model_serializers", github: "rails-api/active_model_serializers"
 
 group :development, :test do
   gem 'byebug'
