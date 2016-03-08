@@ -3,7 +3,7 @@ class Neo4jService
 
   def initialize
     @neo4j_connection = Faraday.new(url: 'http://localhost:7474/db/data/') do |faraday|
-      faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+      faraday.adapter  Faraday.default_adapter
     end
   end
 
@@ -11,7 +11,7 @@ class Neo4jService
     parse(neo4j_connection.get(node_id))[:data][:name]
   end
 
-  def neo4j_link(relationship_id)
+  def neo4j_edge(relationship_id)
     response = parse(neo4j_connection.get(relationship_id))
     [ response[:start], response[:end], response[:type] ]
   end

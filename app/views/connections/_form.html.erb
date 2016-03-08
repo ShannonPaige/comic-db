@@ -5,5 +5,6 @@
   <%= label_tag(:second_character, "Choose second character:") %><br />
   <%= collection_select(:second_character, :character_id, Character.all, :character_id, :name) %>
   <br /><br />
-  <%= submit_tag("Find distance between them") %>
+  <button id="find-connection">submit</button>
+  <!-- <%= submit_tag "Find distance between them", id: "find-connection" %> -->
 <% end %>

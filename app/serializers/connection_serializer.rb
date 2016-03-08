@@ -1,12 +1,11 @@
 class ConnectionSerializer < ActiveModel::Serializer
-  attributes :nodes, :links
+  attributes :nodes, :edges
 
   def nodes
     Connection.get_nodes(object)
   end
 
-  def links
-    binding.pry
-    Connection.get_links(object)
+  def edges
+    Connection.get_edges(object)
   end
 end

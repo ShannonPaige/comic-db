@@ -16,12 +16,14 @@
     background-color: rgba(250, 250, 250, .8);
 }
 
-.node {
-  stroke: #fff;
-  stroke-width: 1.5px;
+#cy {
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  // left: 0;
+  // top: 0;
 }
 
-.link {
-  stroke: #999;
-  stroke-opacity: .6;
+.graph {
+  min-height: 400px;
 }
