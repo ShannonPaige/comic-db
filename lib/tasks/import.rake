@@ -12,12 +12,9 @@ namespace :db do
     end
 
     def characters
-      avengers = service.team_avengers
+      deadpool = service.get_deadpool
       counter = 0
-
-
-      #   character = Character.create(character_id: ,
-                                        # name: )
+      Character.find_or_create(character_id: ,name: )
       #   counter += 1 if character.persisted?
       # end
       #
