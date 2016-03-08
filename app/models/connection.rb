@@ -8,7 +8,7 @@ class Connection
     connection.first["p"]["nodes"].map do |node|
       node.gsub!('http://localhost:7474/db/data/', '')
       id = node.gsub('node/', '')
-      {id: id, name: service.neo4j_node(node)}
+      {id: id, label: service.neo4j_node(node)}
     end
   end
 
@@ -18,7 +18,7 @@ class Connection
       rel = service.neo4j_edge(relationship)
       source_id = rel[0].gsub('http://localhost:7474/db/data/node/', '')
       target_id = rel[1].gsub('http://localhost:7474/db/data/node/', '')
-      {source: source_id, target: target_id, value: rel[2]}
+      {source: source_id, target: target_id, label: rel[2]}
     end
   end
 

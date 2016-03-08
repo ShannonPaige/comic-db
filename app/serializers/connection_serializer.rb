@@ -1,4 +1,4 @@
-class ConnectionSerializer < ActiveModel::Serializer
+class ConnectionSerializer < ActiveModel::Serializer  
   attributes :nodes, :edges
 
   def nodes

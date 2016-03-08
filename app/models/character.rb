@@ -16,10 +16,8 @@ class Character
   has_many :both, :enemies, type: :enemies, model_class: :Character, unique: true
 
   def self.find_connection(char1, char2)
-    first_character_id  = char1[:character_id].to_i
-    second_character_id = char2[:character_id].to_i
-    first_character     = Character.find_by(character_id: first_character_id)
-    second_character    = Character.find_by(character_id: second_character_id)
+    first_character     = Character.find_by(name: char1)
+    second_character    = Character.find_by(name: char2)
     Neo4j::Session.query("MATCH p=
                         (d:Character {name: '#{first_character.name}'})
                         -[*1..6]-
