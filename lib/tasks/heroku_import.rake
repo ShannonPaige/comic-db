@@ -49,7 +49,11 @@ namespace :db do
     end
 
     def heroku_create_character(character, name)
-      deck = character[:deck] || "No description available"
+      if character[:deck]
+        deck = character[:deck]
+      else
+        deck = "No description available"
+      end
       if character[:image]
         image = character[:image][:small_url] || "http://cache2.asset-cache.net/xt/165811120.jpg?v=1&g=fs1%7C0%7CISI%7C11%7C120&s=1"
       else
