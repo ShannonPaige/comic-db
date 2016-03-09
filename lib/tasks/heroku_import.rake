@@ -49,7 +49,7 @@ namespace :db do
     end
 
     def heroku_create_character(character, name)
-      if character[:deck]
+      if !!character[:deck]
         deck = character[:deck]
       else
         deck = "No description available"
