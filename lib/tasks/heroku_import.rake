@@ -7,7 +7,7 @@ namespace :db do
 
   private
 
-    def heroku_heroku_service
+    def heroku_service
       ComicVineService.new
     end
 
