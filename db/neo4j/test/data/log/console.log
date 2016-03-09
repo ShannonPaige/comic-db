@@ -40,3 +40,8 @@
 2016-03-05 19:32:46.145-0700 INFO  Mounting static content at /webadmin
 2016-03-05 19:32:46.321-0700 INFO  Mounting static content at /browser
 2016-03-05 19:32:48.419-0700 INFO  Remote interface ready and available at http://localhost:7475/
+2016-03-09 11:17:16.289-0700 INFO  Successfully started database
+2016-03-09 11:17:16.432-0700 INFO  Starting HTTP on port 7475 (4 threads available)
+2016-03-09 11:17:17.533-0700 INFO  Mounting static content at /webadmin
+2016-03-09 11:17:17.702-0700 INFO  Mounting static content at /browser
+2016-03-09 11:17:19.549-0700 INFO  Remote interface ready and available at http://localhost:7475/

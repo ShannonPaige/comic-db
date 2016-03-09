@@ -2,18 +2,16 @@ class Character
   include Neo4j::ActiveNode
   property :character_id
   property :name
-  property :aliases
   property :deck
-  property :publisher
-  property :img
-  property :created_at
-  property :updated_at
+  property :image
 
   validates :character_id, :presence => true, :uniqueness => true
   validates :name,         :presence => true, :uniqueness => true
 
   has_many :both, :friends, type: :friends, model_class: :Character, unique: true
   has_many :both, :enemies, type: :enemies, model_class: :Character, unique: true
+
+  scope :in_order, ->(identifier){ order("n.#{identifier} ASC")}
 
   def self.find_connection(char1, char2)
     first_character     = Character.find_by(name: char1)
@@ -22,8 +20,8 @@ class Character
                         (d:Character {name: '#{first_character.name}'})
                         -[*1..6]-
                         (m:Character {name: '#{second_character.name}'})
-                         RETURN p")
-                        .to_a
+                         RETURN p
+                         LIMIT 50").to_a
   end
 
 end

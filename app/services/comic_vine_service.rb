@@ -8,9 +8,8 @@ class ComicVineService
     end
   end
 
-  def get_deadpool
-    binding.pry
-    parse(comic_vine_connection.get("character/4005-7606/?format=json&resources=character"))
+  def get_character(id)
+    parse(comic_vine_connection.get("character/4005-#{id}/?format=json&resources=character&field_list=id,image,deck,character_enemies,character_friends"))[:results]
   end
 
 
