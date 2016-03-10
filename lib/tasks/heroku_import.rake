@@ -12,9 +12,9 @@ namespace :db do
     end
 
     def heroku_characters
-      deadpool = heroku_service.get_character(7606)
+      deadpool = heroku_service.get_character(1455)
       sleep 1
-      d = heroku_create_character(deadpool, "Deadpool")
+      d = heroku_create_character(deadpool, "Iron Man")
       counter = 1
       puts "#{counter} created"
       deadpool[:character_enemies].each do |enemy|
@@ -49,11 +49,7 @@ namespace :db do
     end
 
     def heroku_create_character(character, name)
-      if !!character[:deck]
-        deck = character[:deck]
-      else
-        deck = "No description available"
-      end
+      deck = character[:deck] || "No description available"
       if character[:image]
         image = character[:image][:small_url] || "http://cache2.asset-cache.net/xt/165811120.jpg?v=1&g=fs1%7C0%7CISI%7C11%7C120&s=1"
       else

@@ -28,8 +28,8 @@ function renderGraph(json_data) {
   var div_id = "cy";
   var network_json = json_data
   var options = {
-      swfPath: "/assets/CytoscapeWeb",
-      flashInstallerPath: "/assets/playerProductInstall"
+      swfPath: '<%= asset_path 'assets/CytoscapeWeb', extname: false %>',
+      flashInstallerPath: '<%= asset_path 'assets/playerProductInstall', extname: false %>',
   };
   var vis = new org.cytoscapeweb.Visualization(div_id, options);
   var visual_style = {

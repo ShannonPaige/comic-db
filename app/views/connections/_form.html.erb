@@ -3,8 +3,7 @@
   <%= collection_select(:first_character, :character_id, Character.all.in_order(:name), :character_id, :name) %>
   <br /><br />
   <%= label_tag(:second_character, "Choose second character:") %><br />
-  <%= collection_select(:second_character, :character_id, Character.all, :character_id, :name) %>
+  <%= collection_select(:second_character, :character_id, Character.all.in_order(:name), :character_id, :name) %>
   <br /><br />
   <button id="find-connection">submit</button>
-  <!-- <%= submit_tag "Find distance between them", id: "find-connection" %> -->
 <% end %>
