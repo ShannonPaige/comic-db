@@ -30,9 +30,10 @@ function renderGraph(json_data) {
   var network_json = json_data
   // create an array with nodes
    var nodes = new vis.DataSet(json_data["nodes"]);
+   console.log(nodes)
    // create an array with edges
    var edges = new vis.DataSet(json_data["edges"]);
-
+   console.log(edges)
    // create a network
    var container = document.getElementById(div_id);
 
