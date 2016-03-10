@@ -8,7 +8,7 @@ class Connection
     connection.first["p"]["nodes"].map do |node|
       node.gsub!("#{ENV['db']}", "")
       id = node.gsub('node/', '')
-      {id: id, label: service.neo4j_node(node)}
+      {id: id, label: service.neo4j_node(node) }
     end
   end
 
