@@ -6,13 +6,11 @@ describe 'ComicVineService' do
     ComicVineService.new
   end
 
-  describe "#team_avengers" do
-    it "returns the characters from the avengers" do
-        response = service.get_deadpool
-        binding.pry
-        expect(user_info[:data][:username]).to eq("diagonalizable")
-        expect(user_info[:data][:full_name]).to eq("Shannon P")
-        expect(user_info[:data][:id]).to eq("25151534")
+  describe "#get_character" do
+    it "returns the character from comicvine" do
+        response = service.get_character(7606)
+
+        expect(response[:id]).to eq(7606)
     end
   end
 end
