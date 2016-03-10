@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 function getDataButton() {
   $('#find-connection').on("click", function(event){
+    console.log("Button hit")
     event.preventDefault();
     var first_character_id  = $("#first_character_character_id option:selected").text();
     var second_character_id = $('#second_character_character_id option:selected').text()
@@ -27,46 +28,21 @@ function renderGraph(json_data) {
   $('.graph').removeClass('hide')
   var div_id = "cy";
   var network_json = json_data
-  var options = {
-      swfPath: '<%= asset_path 'CytoscapeWeb' %>',
-      flashInstallerPath: '<%= asset_path 'assets/playerProductInstall', extname: false %>',
-  };
-  var vis = new org.cytoscapeweb.Visualization(div_id, options);
-  var visual_style = {
-    global: {
-      backgroundColor: "#ffffff"
-    },
-    nodes: {
-      shape: "CIRCLE",
-      borderWidth: 2,
-      borderColor: "#333333",
-      size: {
-          defaultValue: 60,
-          continuousMapper: { attrName: "weight", minValue: 25, maxValue: 75 }
-      },
-      color: {
-          discreteMapper: {
-              attrName: "id",
-              entries: [
-                  { attrValue: 1, value: "#0B94B1" },
-                  { attrValue: 2, value: "#9A0B0B" },
-                  { attrValue: 3, value: "#dddd00" }
-              ]
-          }
-      },
-      labelHorizontalAnchor: "center",
-      labelVerticalAnchor: "top"
-    },
-    edges: {
-      width: 3,
-      color: "#0B94B1"
-    }
-  };
-  var draw_options = {
-    network: network_json,
-    visualStyle: visual_style,
-    panZoomControlVisible: true
-  };
+  // create an array with nodes
+   var nodes = new vis.DataSet(json_data["nodes"]);
+   // create an array with edges
+   var edges = new vis.DataSet(json_data["edges"]);
 
-  vis.draw(draw_options);
+   // create a network
+   var container = document.getElementById(div_id);
+
+   // provide the data in the vis format
+   var data = {
+       nodes: nodes,
+       edges: edges
+   };
+   var options = {};
+
+   // initialize your network!
+   var network = new vis.Network(container, data, options);
 } // findConnection function
