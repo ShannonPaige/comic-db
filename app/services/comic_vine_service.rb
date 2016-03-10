@@ -2,7 +2,7 @@ class ComicVineService
   attr_reader :comic_vine_connection
 
   def initialize
-    @comic_vine_connection = Faraday.new(url: "#{ENV['db']}") do |faraday|
+    @comic_vine_connection = Faraday.new(url: 'http://comicvine.gamespot.com/api/') do |faraday|
       faraday.adapter  Faraday.default_adapter
       faraday.params[:api_key] = ENV['comic_vine_key']
     end

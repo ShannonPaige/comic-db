@@ -2,7 +2,7 @@ class Neo4jService
   attr_reader :neo4j_connection
 
   def initialize
-    @neo4j_connection = Faraday.new(url: 'http://localhost:7474/db/data/') do |faraday|
+    @neo4j_connection = Faraday.new(url: "#{ENV['db']}") do |faraday|
       faraday.adapter  Faraday.default_adapter
     end
   end
