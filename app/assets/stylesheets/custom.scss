@@ -6,6 +6,15 @@
   background-position: center center;
 }
 
+.navbar-default {
+    background-color: #d9534f;
+}
+
+.navbar {
+    min-height: 100px;
+    margin-bottom: 0px;
+}
+
 .jumbotron h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 72px;
@@ -13,7 +22,7 @@
 }
 
 .jumbotron {
-    background-color: rgba(250, 250, 250, .8);
+    background-color: rgba(250, 250, 250, .7);
 }
 
 #cy {
@@ -24,4 +33,20 @@
 
 .graph {
   min-height: 400px;
+}
+
+.navbar-nav > li {
+  float: none;
+}
+
+.navbar-right {
+  margin-right: 0px;
+}
+
+.navbar-nav {
+    margin: 20px;
+}
+
+ul.nav.navbar-nav.navbar-right.search {
+    font-size: 20px;
 }

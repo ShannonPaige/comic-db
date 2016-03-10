@@ -29,8 +29,6 @@ function renderGraph(json_data) {
   var div_id = "cy";
   var network_json = json_data
   // create an array with nodes
-  console.log('Nodes', json_data["nodes"])
-  console.log('Edges', json_data["edges"])
   var nodes = new vis.DataSet(json_data["nodes"]);
   // create an array with edges
   var edges = new vis.DataSet(json_data["edges"]);

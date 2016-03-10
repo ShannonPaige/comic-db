@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        <img alt="6 Degrees" src="<%= image_path 'logo.png' %>">
+      </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right search">
+      <li class="directions">How are your favorite comic book characters connected?</li>
+      <li><%= render partial: 'connections/form', class: "navbar-form navbar-left" %></li>
+    </ul>
+  </div>
+</nav>

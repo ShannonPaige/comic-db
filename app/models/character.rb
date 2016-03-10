@@ -18,7 +18,7 @@ class Character
     second_character    = Character.find_by(name: char2)
     Neo4j::Session.query("MATCH p=
                         (d:Character {name: '#{first_character.name}'})
-                        -[*1..6]-
+                        -[*1..5]-
                         (m:Character {name: '#{second_character.name}'})
                          RETURN p
                          LIMIT 50").to_a

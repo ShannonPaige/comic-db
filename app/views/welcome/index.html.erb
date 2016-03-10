@@ -1,7 +1,13 @@
-<div class="jumbotron">
-  <h1>Six Degrees of Superheroes</h1>
-  <p>Want to see how your favorite superheroes are connected?</p>
-  <p><%= button_to "Get Started", new_connection_path,
-                                  method: :get,
-                                  class: "btn btn-danger btn-lg" %></p>
+<%= render partial: 'shared/nav' %>
+<div class="superheroes">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>6 Degrees</h1>
+      <p>How are comic book characters connected?</p>
+      <p>You might be surprised?</p>
+      <p><%= button_to "Get Started", new_connection_path,
+                                      method: :get,
+                                      class: "btn btn-danger btn-lg" %></p>
+    </div>
+  </div>
 </div>
