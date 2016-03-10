@@ -29,21 +29,21 @@ function renderGraph(json_data) {
   var div_id = "cy";
   var network_json = json_data
   // create an array with nodes
-   var nodes = new vis.DataSet(json_data["nodes"]);
-   console.log(nodes)
-   // create an array with edges
-   var edges = new vis.DataSet(json_data["edges"]);
-   console.log(edges)
-   // create a network
-   var container = document.getElementById(div_id);
+  console.log('Nodes', json_data["nodes"])
+  console.log('Edges', json_data["edges"])
+  var nodes = new vis.DataSet(json_data["nodes"]);
+  // create an array with edges
+  var edges = new vis.DataSet(json_data["edges"]);
+  // create a network
+  var container = document.getElementById(div_id);
 
-   // provide the data in the vis format
-   var data = {
-       nodes: nodes,
-       edges: edges
-   };
-   var options = {};
+  // provide the data in the vis format
+  var data = {
+     nodes: nodes,
+     edges: edges
+  };
+  var options = {};
 
-   // initialize your network!
-   var network = new vis.Network(container, data, options);
+  // initialize your network!
+  var network = new vis.Network(container, data, options);
 } // findConnection function
