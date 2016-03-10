@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 function getDataButton() {
   $('#find-connection').on("click", function(event){
-    console.log("Button hit")
     event.preventDefault();
     var first_character_id  = $("#first_character_character_id option:selected").text();
     var second_character_id = $('#second_character_character_id option:selected').text()
@@ -40,8 +39,14 @@ function renderGraph(json_data) {
      nodes: nodes,
      edges: edges
   };
+  console.log(nodes)
   var options = {};
 
   // initialize your network!
   var network = new vis.Network(container, data, options);
+
+  network.on("click", function (params) {
+        params.event = "[original event]";
+        document.getElementById('learn-more').innerHTML = "<h2>Click Event</h2>" + JSON.stringify(params, null, 4);
+    });
 } // findConnection function
