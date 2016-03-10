@@ -13,6 +13,7 @@ gem 'neo4j', '~> 6.1.0'
 gem 'figaro'
 gem 'responders'
 gem "active_model_serializers", github: "rails-api/active_model_serializers"
+gem 'swf_fu'
 
 group :development, :test do
   gem 'byebug'
