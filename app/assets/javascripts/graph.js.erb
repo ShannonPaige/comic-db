@@ -28,7 +28,7 @@ function renderGraph(json_data) {
   var div_id = "cy";
   var network_json = json_data
   var options = {
-      swfPath: '<%= asset_path 'assets/CytoscapeWeb', extname: false %>',
+      swfPath: '<%= asset_path 'assets/CytoscapeWeb' %>',
       flashInstallerPath: '<%= asset_path 'assets/playerProductInstall', extname: false %>',
   };
   var vis = new org.cytoscapeweb.Visualization(div_id, options);
